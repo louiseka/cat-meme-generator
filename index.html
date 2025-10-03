@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cat Meme Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Cat Meme Generator</h1>
+    </header>
+
+    <main>
+      <form class="form__container">
+        <div class="input__container">
+          <p class="input__container__warning" id="warning-message"></p>
+          <label class="input__container__label" for="catTitle"
+            >Enter text to add to your cat image</label
+          >
+          <input
+            class="input__container__input"
+            type="text"
+            name="catTitle"
+            id="catTitle"
+          />
+        </div>
+        <button class="form__container__btn" id="submit-button" type="submit">
+          Generate my cat image
+        </button>
+      </form>
+      <section id="loading-container" class="loading__container"></section>
+
+      <section class="img__container" id="img-container">
+        <!-- Generated image will go here -->
+      </section>
+    </main>
+  </body>
+</html>
